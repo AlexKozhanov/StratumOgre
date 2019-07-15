@@ -1,0 +1,73 @@
+material "homedefault"
+{
+	technique homedefault_technique
+	{
+		pass homedefault_standard
+		{
+			ambient 1 1 1 1
+			diffuse 1 1 1 1
+			specular 1 1 1 1 2.55
+			emissive 0 0 0 1
+
+			texture_unit homedefault_Diffuse#0
+			{
+				texture homecty1.jpg
+				tex_coord_set 0
+				colour_op modulate
+			}
+		}
+	}
+}
+material "homedefault_sidewalks"
+{
+	technique homedefault_sidewalks_technique
+	{
+		pass homedefault_sidewalks_standard
+		{
+			ambient 1 1 1 1
+			diffuse 1 1 1 1
+			specular 1 1 1 1 2.55
+			emissive 0 0 0 1
+
+			texture_unit homedefault_sidewalks_Diffuse#0
+			{
+				texture homeang1.jpg
+				tex_coord_set 0
+				colour_op modulate
+			}
+		}
+	}
+}
+material "homedefault_bldgs2"
+{
+	technique homedefault_bldgs2_technique
+	{
+		pass homedefault_bldgs2_standard
+		{
+			ambient 1 1 1 1
+			diffuse 1 1 1 1
+			specular 1 1 1 1 2.55
+			emissive 0 0 0 1
+
+			texture_unit homedefault_bldgs2_Diffuse#0
+			{
+				texture homecty2x.jpg
+				tex_coord_set 0
+				colour_op modulate
+			}
+		}
+	}
+}
+material "homeDefault"
+{
+	technique homeDefault_technique
+	{
+		pass homeDefault_standard
+		{
+			ambient 0 0 0 1
+			diffuse 0.258824 0.258824 0.258824 1
+			specular 0 0 0 0 2.55
+			emissive 0 0 0 1
+		}
+	}
+}

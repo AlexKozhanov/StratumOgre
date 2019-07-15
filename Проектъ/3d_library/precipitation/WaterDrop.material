@@ -1,0 +1,40 @@
+material WaterDrop
+{
+	technique
+	{
+		pass
+		{
+			lighting on
+			scene_blend alpha_blend
+			depth_write off
+			diffuse vertexcolour
+
+			texture_unit
+			{
+				texture WaterDrop.png
+				//На место WaterDrop.png можно вставить название вашего изображения
+				tex_address_mode clamp
+			}
+		}
+	}
+}
+material Grad
+{
+	technique
+	{
+		pass
+		{
+			lighting on
+			scene_blend alpha_blend
+			depth_write off
+			diffuse vertexcolour
+
+			texture_unit
+			{
+				texture snowballs.jpg
+				//На место WaterDrop.png можно вставить название вашего изображения
+				tex_address_mode clamp
+			}
+		}
+	}
+}
